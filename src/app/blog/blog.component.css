@@ -1,0 +1,11 @@
+body {
+    font-family: 'Cascadia', monospace;
+    color: aliceblue;
+    background-color: black;
+}
+.highlight, .dark :not(pre)>code {
+    background: #1c262d;
+    border-color: #2d404e;
+}
+
+
