@@ -9,23 +9,26 @@ import { BlogComponent } from './blog/blog.component';
 import { LiveDrumAppComponent } from './live-drum-app/live-drum-app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { AngularPerformanceTuningComponent } from './angular-performance-tuning/angular-performance-tuning.component';
+import { MetronomeComponent } from './metronome/metronome.component';
+import { FirestoreModule } from '@angular/fire/firestore';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProfileComponent,
-    DetatilsComponent,
-    BlogComponent,
-    LiveDrumAppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent, MetronomeComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        FirestoreModule,
+        ProfileComponent,
+        DetatilsComponent,
+        BlogComponent,
+        LiveDrumAppComponent,
+        AngularPerformanceTuningComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

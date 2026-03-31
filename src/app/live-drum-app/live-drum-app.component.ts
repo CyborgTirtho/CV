@@ -11,6 +11,7 @@ import {
   selector: 'app-live-drum-app',
   templateUrl: './live-drum-app.component.html',
   styleUrls: ['./live-drum-app.component.css'],
+  standalone:true
 })
 export class LiveDrumAppComponent {
   listOfFile: any[] = [

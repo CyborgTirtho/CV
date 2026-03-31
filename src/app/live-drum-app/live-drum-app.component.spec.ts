@@ -8,8 +8,8 @@ describe('LiveDrumAppComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LiveDrumAppComponent]
-    });
+    imports: [LiveDrumAppComponent]
+});
     fixture = TestBed.createComponent(LiveDrumAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
